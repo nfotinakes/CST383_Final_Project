@@ -1,6 +1,6 @@
 # CST383: Intro to Data Science - Final Project
 
-## National Happiness
+## Predicting National Happiness
 
 #### Authors: Alonso Vega, Daniel Letterman, Gabe Williams, and Nicholas Fotinakes
 
@@ -18,7 +18,9 @@ Dataset obtained from Kaggle: https://www.kaggle.com/datasets/ajaypalsinghlo/wor
 Original Source: https://worldhappiness.report/ed/2021/
 Local file also saved in this repository, accessed February 2023 for this report.
 
-  The dataset includes information from the 2021 World Happiness Report. The columns of the dataset include country names, region, and a ladder score. The ladder score is the overall happiness score of a country based on the numerical scale 0-10, 0 being the least happy and 10 being the most. This score is determined from the Gallup World Poll in which researchers ask respondents main life evaluation questions based off a technique called the Cantril ladder to determine the ladder score. In addition to the country and score columns, the dataset includes columns that represent different factors of a nation which may be influential factors to the overall happiness score of a country. The columns of interest for this project include the logged GDP per capita, life expectancy, social support, freedom to make life choices, generosity, and perceptions of corruption.
+  The dataset includes information from the 2021 World Happiness Report. The columns of the dataset include country names, region, and a ladder score. The ladder score is the overall happiness score of a country based on the numerical scale 0-10, 0 being the least happy and 10 being the most. This score is determined from the Gallup World Poll in which researchers ask respondents main life evaluation questions based off a technique called the Cantril ladder to determine the ladder score. In addition to the country and score columns, the dataset includes columns that represent different factors of a nation which may be influential factors to the overall happiness score of a country. 
+  
+For data munging/feature engineering, we decided to drop columns that do not neccesarily contribute to the happiness score. The columns of interest for this project include the logged GDP per capita, life expectancy, social support, freedom to make life choices, generosity, and perceptions of corruption. These predictors will use Z-score normalization for relevant machine learning tests such as KNN. 
   
 Additional details on dataset columns:
 
