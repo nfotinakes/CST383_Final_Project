@@ -22,7 +22,7 @@ Local file also saved in this repository, accessed February 2023 for this report
   
 For data munging/feature engineering, we decided to drop columns that do not neccesarily contribute to the happiness score. The columns of interest for this project include the logged GDP per capita, life expectancy, social support, freedom to make life choices, generosity, and perceptions of corruption. These predictors will use Z-score normalization for relevant machine learning tests such as KNN. 
   
-Additional details on dataset columns:
+### Additional details on dataset columns:
 
 **Healthy Life Expectancy** – data extracted from the World Health Organization’s Global Health Observatory data repository.
 
