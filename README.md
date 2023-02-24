@@ -46,7 +46,22 @@ https://happiness-report.s3.amazonaws.com/2021/Appendix1WHR2021C2.pdf
 ## Methods
 
 Tools:
+Used for data exploration, preprocessing, and visualization
 * Numpy
 * Pandas
 * Matplotlib
 * Seaborn
+
+Methods using SciKit:
+* Models: KNN, Linear Regression, and Decision Tree
+
+File created using Jupyter Notebook via Anaconda
+
+## Results
+
+
+## Discussion
+
+
+## Summary
+
