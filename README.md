@@ -64,8 +64,23 @@ We then ran experiments using the three methods/machine learning models to see w
 
 ## Results
 
+In our data exploration/preprocessing phase we found that the dataset had no missing values and was all already recorded as numeric values. There were 149 countries recorded each with 20 features. We kept the 6 features of interest for this report and dropped the other additional features.
+
+In the data visualization we found that of the 6 numeric features of interest, the four features: Logged GDP per capita, Social support, Healthy life expectancy, and Freedom to make life choices were the most correlated with the happiness Ladder score. These four features showed positive linear correlation with our target predictor. 
+
+In the experimentation phase of our modeling we first used KNN. Here we found...
+
+For the second model we used Linear Regression. We first found a baseline/blind RMSE value of 1.02. With feature selection on the top 4 predictors we lowered this RMSE to 0.58 and an R-squared value of 0.76. Using the additional predictors as well as using feature engineering proved to show no real improvement to the RMSE. This shows Linear Regression gives fairly accurate prediction results on this dataset. 
+
+For the third model we used Decision Tree. Using all six predictors of interest gave a test accuracy of around 60%. Using only the top 4 predictors did not show improvement to this accuracy for the test data, in fact lowering it by about 10%.
 
 ## Discussion
+
+It appears that the Linear Regression model provided the most accurate predictions on the test data throughout our experiments. This seems to match the results found when visualizing the data, as the four most correlated features all showed a positive linear trend. 
+
+Additionally, it seems that our predictions were correct with Logged GDP per capita, and Healthy life expectancy as well as Social support and Freedom to make life choices proved to provide the most accurate results. 
+
+Upon further research, it aligns with our research that the income/wealth of a nation, access to healthcare, and freedom are the top indicators of a citizens happiness. This information could be useful to politicians and nation leaders when focusing on areas to improve and work on. 
 
 
 ## Summary
