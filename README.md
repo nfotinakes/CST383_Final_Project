@@ -74,11 +74,11 @@ In the data visualization we found that of the 6 numeric features of interest, L
 
 **Machine Learning**
 
-In the experimentation and machine learning phase the first model we created using KNN. We first ran the model with default parameters and also got the blind RMSE value. The Blind RMSE was 0.997 and the default KNN had an test RMSE value of 0.611.
+In the experimentation and machine learning phase, we first created a KNN model. We ran the model with default parameters and calculated the blind RMSE and default test RMSE values. The Blind RMSE was 0.997 and the default KNN had a test RMSE value of 0.611.
 
 We then fine tuned the KNN model hyperparameters to find the best k value of 11, the weight of distance, and brute for the algorithm. This gave a test RMSE of 0.56. Upon then using feature selection with the top four predictors, we further lowered the test RMSE to 0.53.
 
-For the second model we used Linear Regression. We first again found a baseline/blind RMSE value of 1.00. With feature selection on the top four predictors we lowered this RMSE to 0.63 and an R-squared value of 0.78. Using the additional predictors showed very slight improvement to the RMSE. 
+For the second model we used Linear Regression. Again we first found a baseline/blind RMSE value of 1.00. With feature selection on the top four predictors we lowered this RMSE to 0.63 and an R-squared value of 0.78. Using the additional predictors showed very slight improvement to the RMSE. 
 
 For the third model we used Decision Tree. We ran the model using all six numerical predictors as well as the top four correlated predictors. The model was tuned with hyperparameters of min_sample_split, min_sample_leaf, and max_features. Both tests showed a test accuracy of around 50-60%.
 
@@ -86,16 +86,16 @@ It appears that the KNN and Linear Regression models provided the most accurate 
 
 ## Discussion
 
-The results imply that our six predictors GDP, life expectancy, social support, freedom, generosity, and corruption of a nation all have influence to a nations overall happiness. Further, the top four predictors of GDP, life expectancy, social support and freedom seem to have higher correlation and heavier weight when it comes to the final happiness score. 
+The results imply that our six predictors GDP, life expectancy, social support, freedom, generosity, and corruption of a nation all have influence to a nations overall happiness. Further, the top four predictors of GDP, life expectancy, social support and freedom seem to have higher correlation and heavier weight when it comes to the final happiness score depending on the machine learning algorithm used. 
 
-Upon further research, it aligns with our research that the income/wealth of a nation, access to healthcare, and freedom are the top indicators of a citizens happiness. This information could be useful to politicians and national leaders when focusing on areas to improve and work on. Passing legislature and tax breaks to help improve a citizens GDP and increasing their access to healthcare could vastly improve the overall happiness of that country. 
+Upon further research, it aligns with our research that the income/wealth of a nation, access to healthcare, and freedom are often the top indicators of a citizens happiness. This information could be useful to politicians and national leaders when focusing on areas to improve. Passing legislature and tax breaks to help improve a citizens GDP and increasing their access to healthcare alone could vastly improve the overall happiness of that country. 
 
-While our models gave fairly accurate predictions, they still seemed to top out at around 70% accuracy in predictions. Perhaps with further tuning and exploration this could be increased to provide further insight and more accurate analysis of the dataset. Additionally, this data set was on the smaller side. It could be interesting in further surveys to collect additional data on a country to help further tune future models. 
+While our models gave fairly accurate predictions, they seemed to top out at around 70% accuracy in predictions. Perhaps with further tuning and exploration this could be increased to provide further insight and more accurate analysis of the dataset. Additionally, this data set was on the smaller side. It could be interesting in further surveys to collect additional data on a country to help further tune future models. 
 
 
 ## Summary
 
-In conclusion, our goal was fairly accurately achieved of creating a model to predict the overall happiness score of a country. We found predictors in the data that with high correlation and used these to create models to predict a happiness score based off these values. Through exploration and experimentation, as stated above, we found that GDP, life expectancy, social support, and freedom were high indicators of national happiness. 
+In conclusion, our goal was achieved of creating a model to predict the overall happiness score of a country with a fair degree of accuracy. We found predictors in the data with high correlation and used these to create models to predict a happiness score based off these values. Through exploration and experimentation, as stated above, we found that GDP, life expectancy, social support, and freedom were high indicators of national happiness. 
 
 Through modeling, we were able to reduce RMSE values from 1 to 0.53 at the lowest and achive R-squared value of 0.79 and ovearll accuracy of around 70%. While this report and experimentation was fairly simple we were still able to achieve good results, but there is always room for improvement. With more fine tuning and perhaps a more robust dataset, researchers can further predict where a nation will fall on the happiness scale. With this data, there can hopefully be real world change by policy makers to address these certain aspects of a nation that can have a profound impact on the happiness of it's citizens. 
 
