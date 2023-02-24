@@ -66,7 +66,7 @@ We then ran experiments using the three methods/machine learning models to see w
 
 In our data exploration/preprocessing phase we found that the dataset had no missing values and was all already recorded as numeric values. There were 149 countries recorded each with 20 features. We kept the 6 features of interest for this report and dropped the other additional features.
 
-In the data visualization we found that of the 6 numeric features of interest, the four features: Logged GDP per capita, Social support, Healthy life expectancy, and Freedom to make life choices were the most correlated with the happiness Ladder score. These four features showed positive linear correlation with our target predictor. 
+In the data visualization we found that of the 6 numeric features of interest, Logged GDP per capita, Social support, Healthy life expectancy, and Freedom to make life choices were the most correlated with the happiness Ladder score. These four features showed positive linear correlation with our target predictor. 
 
 In the experimentation phase of our modeling we first used KNN. Here we found...
 
