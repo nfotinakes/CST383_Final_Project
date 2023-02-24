@@ -65,12 +65,15 @@ We then ran experiments using the three machine learning models to see what prov
 ## Results
 
 **Data exploration and preprocessing**
+
 In our data exploration/preprocessing phase we found that the dataset had no missing values and was all already recorded as numeric values. There were 149 countries recorded each with 20 features. We kept the 6 features of interest for this report and dropped the other additional features. The dataset had a standard deviation of about 1.07 for the happiness score, with a minimum score of 2.52 and a high score of 7.84.
 
 **Data visualization**
+
 In the data visualization we found that of the 6 numeric features of interest, Logged GDP per capita, Social support, Healthy life expectancy, and Freedom to make life choices were the most correlated with the happiness Ladder score. These four features showed positive linear correlation with our target feature. The Logged GDP per capita had a correlation of 0.79, Social support of 0.76, Healthy life expectancy of 0.77, and Freedom to make life choices of 0.61.
 
 **Machine Learning**
+
 In the experimentation and machine learning phase the first model we created using KNN. We first ran the model with default parameters and also got the blind RMSE value. The Blind RMSE was 0.997 and the default KNN had an test RMSE value of 0.611.
 
 We then fine tuned the KNN model hyperparameters to find the best k value of 11, the weight of distance, and brute for the algorithm. This gave a test RMSE of 0.56. Upon then using feature selection with the top four predictors, we further lowered the test RMSE to 0.53.
