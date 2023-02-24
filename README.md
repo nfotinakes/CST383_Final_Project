@@ -43,3 +43,10 @@ Typical sample size per country is 1,000 people and dataset includes 149 countri
 *Additional information is from the 2021 World Happiness Report Statistical Appendix 1:*
 https://happiness-report.s3.amazonaws.com/2021/Appendix1WHR2021C2.pdf  
 
+## Methods
+
+Tools:
+* Numpy
+* Pandas
+* Matplotlib
+* Seaborn
