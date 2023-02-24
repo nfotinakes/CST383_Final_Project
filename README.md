@@ -92,7 +92,9 @@ While our models gave fairly accurate predictions, they still seemed to top out 
 
 ## Summary
 
-## Refrences
+
+
+## References
 
 Helliwell, J. F., Layard, R., Sachs, J. D., Jan-Emmanuel De Neve, Aknin, L. B., & Wang, S. (2021, March 20). World Happiness Report 2021. https://worldhappiness.report/ed/2021/
 
