@@ -45,43 +45,67 @@ https://happiness-report.s3.amazonaws.com/2021/Appendix1WHR2021C2.pdf
 ## Methods
 
 Tools:
-* Numpy
+* NumPy
 * Pandas
 * Matplotlib
 * Seaborn
 
-Methods/Models:
+Models:
 * KNN
 * Linear Regression
 * Decision Tree
 
 *File created using Jupyter Notebook via Anaconda*
 
-Using the tool set above, we first explored the dataset, did some data preprocessing/datamunging, and visualized the data relationship. 
+Using the tool set above, we first read that dataset as a dataframe using Pandas and then further explored the dataset with Pandas and NumPy. With these we then did further data preprocessing/datamunging, and used Matplotlib and Seaborn to visualize the data relationship between the target Ladder score and predictors. 
 
-We then ran experiments using the three methods/machine learning models to see what provided more accurate test predictions for this dataset. Within each model, we ran some subset experiments to test some feature selection/engineering to see if we could fine tune or improve each model.
+We then ran experiments using the three machine learning models to see what provided more accurate test predictions for this dataset. Within each model, we ran some subset experiments to test some feature selection/engineering to see if we could fine tune or improve each model.
 
 
 ## Results
 
-In our data exploration/preprocessing phase we found that the dataset had no missing values and was all already recorded as numeric values. There were 149 countries recorded each with 20 features. We kept the 6 features of interest for this report and dropped the other additional features.
+**Data exploration and preprocessing**
 
-In the data visualization we found that of the 6 numeric features of interest, Logged GDP per capita, Social support, Healthy life expectancy, and Freedom to make life choices were the most correlated with the happiness Ladder score. These four features showed positive linear correlation with our target predictor. 
+In our data exploration/preprocessing phase we found that the dataset had no missing values and was all already recorded as numeric values. There were 149 countries recorded each with 20 features. We kept the 6 features of interest for this report and dropped the other additional features. The dataset had a standard deviation of about 1.07 for the happiness score, with a minimum score of 2.52 and a high score of 7.84.
 
-In the experimentation phase of our modeling we first used KNN. Here we found...
+**Data visualization**
 
-For the second model we used Linear Regression. We first found a baseline/blind RMSE value of 1.02. With feature selection on the top 4 predictors we lowered this RMSE to 0.58 and an R-squared value of 0.76. Using the additional predictors as well as using feature engineering proved to show no real improvement to the RMSE. This shows Linear Regression gives fairly accurate prediction results on this dataset. 
+In the data visualization we found that of the 6 numeric features of interest, Logged GDP per capita, Social support, Healthy life expectancy, and Freedom to make life choices were the most correlated with the happiness Ladder score. These four features showed positive linear correlation with our target feature. The Logged GDP per capita had a correlation of 0.79, Social support of 0.76, Healthy life expectancy of 0.77, and Freedom to make life choices of 0.61.
 
-For the third model we used Decision Tree. Using all six predictors of interest gave a test accuracy of around 60%. Using only the top 4 predictors did not show improvement to this accuracy for the test data, in fact lowering it by about 10%.
+**Machine Learning**
+
+In the experimentation and machine learning phase, we first created a KNN model. We ran the model with default parameters and calculated the blind RMSE and default test RMSE values. The Blind RMSE was 0.997 and the default KNN had a test RMSE value of 0.611.
+
+We then fine tuned the KNN model hyperparameters to find the best k value of 11, the weight of distance, and brute for the algorithm. This gave a test RMSE of 0.56. Upon then using feature selection with the top four predictors, we further lowered the test RMSE to 0.53.
+
+For the second model we used Linear Regression. Again we first found a baseline/blind RMSE value of 1.00. With feature selection on the top four predictors we lowered this RMSE to 0.63 and an R-squared value of 0.78. Using the additional predictors showed very slight improvement to the RMSE. 
+
+For the third model we used Decision Tree. We ran the model using all six numerical predictors as well as the top four correlated predictors. The model was tuned with hyperparameters of min_sample_split, min_sample_leaf, and max_features. Both tests showed a test accuracy of around 50-60%.
+
+It appears that the KNN and Linear Regression models provided the most accurate predictions on the test data throughout our experiments. This seems to match the results found when visualizing the data, as the four most correlated features all showed a positive linear trend. Our hypothesis was fairly accurate with the top four correlating predictors improving some models in our testing. 
 
 ## Discussion
 
-It appears that the Linear Regression model provided the most accurate predictions on the test data throughout our experiments. This seems to match the results found when visualizing the data, as the four most correlated features all showed a positive linear trend. 
+The results imply that our six predictors GDP, life expectancy, social support, freedom, generosity, and corruption of a nation all have influence to a nations overall happiness. Further, the top four predictors of GDP, life expectancy, social support and freedom seem to have higher correlation and heavier weight when it comes to the final happiness score depending on the machine learning algorithm used. 
 
-Additionally, it seems that our predictions were correct with Logged GDP per capita, and Healthy life expectancy as well as Social support and Freedom to make life choices proved to provide the most accurate results. 
+Upon further research, it aligns with our research that the income/wealth of a nation, access to healthcare, and freedom are often the top indicators of a citizens happiness. This information could be useful to politicians and national leaders when focusing on areas to improve. Passing legislature and tax breaks to help improve a citizens GDP and increasing their access to healthcare alone could vastly improve the overall happiness of that country. 
 
-Upon further research, it aligns with our research that the income/wealth of a nation, access to healthcare, and freedom are the top indicators of a citizens happiness. This information could be useful to politicians and nation leaders when focusing on areas to improve and work on. 
+While our models gave fairly accurate predictions, they seemed to top out at around 70% accuracy in predictions. Perhaps with further tuning and exploration this could be increased to provide further insight and more accurate analysis of the dataset. Additionally, this data set was on the smaller side. It could be interesting in further surveys to collect additional data on a country to help further tune future models. 
 
 
 ## Summary
 
+In conclusion, our goal was achieved of creating a model to predict the overall happiness score of a country with a fair degree of accuracy. We found predictors in the data with high correlation and used these to create models to predict a happiness score based off these values. Through exploration and experimentation, as stated above, we found that GDP, life expectancy, social support, and freedom were high indicators of national happiness. 
+
+Through modeling, we were able to reduce RMSE values from 1 to 0.53 at the lowest and achive R-squared value of 0.79 and ovearll accuracy of around 70%. While this report and experimentation was fairly simple we were still able to achieve good results, but there is always room for improvement. With more fine tuning and perhaps a more robust dataset, researchers can further predict where a nation will fall on the happiness scale. With this data, there can hopefully be real world change by policy makers to address these certain aspects of a nation that can have a profound impact on the happiness of it's citizens. 
+
+
+## References
+
+Helliwell, J. F., Layard, R., Sachs, J. D., Jan-Emmanuel De Neve, Aknin, L. B., & Wang, S. (2021, March 20). World Happiness Report 2021. https://worldhappiness.report/ed/2021/
+
+Singh, A. (2021). World Happiness Report 2021. https://www.kaggle.com/datasets/ajaypalsinghlo/world-happiness-report-2021?select=world-happiness-report-2021.csv
+
+VanderPlas, J. (2023). Python Data Science Handbook | Python Data Science Handbook. https://jakevdp.github.io/PythonDataScienceHandbook/
+
+‌
