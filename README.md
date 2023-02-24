@@ -50,7 +50,7 @@ Tools:
 * Matplotlib
 * Seaborn
 
-Methods/Models:
+Models:
 * KNN
 * Linear Regression
 * Decision Tree
@@ -59,7 +59,7 @@ Methods/Models:
 
 Using the tool set above, we first explored the dataset, did data preprocessing/datamunging, and visualized the data relationship between the target Ladder score and predictors. 
 
-We then ran experiments using the three methods/machine learning models to see what provided more accurate test predictions for this dataset. Within each model, we ran some subset experiments to test some feature selection/engineering to see if we could fine tune or improve each model.
+We then ran experiments using the three machine learning models to see what provided more accurate test predictions for this dataset. Within each model, we ran some subset experiments to test some feature selection/engineering to see if we could fine tune or improve each model.
 
 
 ## Results
@@ -92,6 +92,9 @@ While our models gave fairly accurate predictions, they still seemed to top out 
 
 ## Summary
 
+In conclusion, our goal was fairly accurately achieved of creating a model to predict the overall happiness score of a country. We found predictors in the data that with high correlation and used these to create models to predict a happiness score based off these values. Through exploration and experimentation, as stated above, we found that GDP, life expectancy, social support, and freedom were high indicators of national happiness. 
+
+Through modeling, we were able to reduce RMSE values from 1 to 0.53 at the lowest and achive R-squared value of 0.79 and ovearll accuracy of around 70%. While this report and experimentation was fairly simple we were still able to achieve good results, but there is always room for improvement. With more fine tuning and perhaps a more robust dataset, researchers can further predict where a nation will fall on the happiness scale. With this data, there can hopefully be real world change by policy makers to address these certain aspects of a nation that can have a profound impact on the happiness of it's citizens. 
 
 
 ## References
