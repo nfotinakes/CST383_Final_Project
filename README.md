@@ -92,3 +92,12 @@ While our models gave fairly accurate predictions, they still seemed to top out 
 
 ## Summary
 
+## Refrences
+
+Helliwell, J. F., Layard, R., Sachs, J. D., Jan-Emmanuel De Neve, Aknin, L. B., & Wang, S. (2021, March 20). World Happiness Report 2021. https://worldhappiness.report/ed/2021/
+
+Singh, A. (2021). World Happiness Report 2021. https://www.kaggle.com/datasets/ajaypalsinghlo/world-happiness-report-2021?select=world-happiness-report-2021.csv
+
+VanderPlas, J. (2023). Python Data Science Handbook | Python Data Science Handbook. https://jakevdp.github.io/PythonDataScienceHandbook/
+
+‌
