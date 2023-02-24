@@ -26,6 +26,8 @@ For data munging/feature engineering, we decided to drop columns that do not nec
   
 ### Additional details on dataset columns:
 
+**Logged GDP per Capita:** Economic ouput of a nation per person (Gross domestic Product)
+
 **Healthy Life Expectancy** – data extracted from the World Health Organization’s Global Health Observatory data repository.
 
 **Social Support** – the national average of binary responses to the GWP question “If you were in trouble, do you have relatives or friends you can count on to help you whenever you need them, or not?”
