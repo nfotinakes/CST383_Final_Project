@@ -1,6 +1,5 @@
-# CST383: Intro to Data Science - Final Project
-
-## Predicting National Happiness
+# Predicting National Happiness
+CST383: Intro to Data Science - Final Project
 
 #### Authors: Alonso Vega, Daniel Letterman, Gabe Williams, and Nicholas Fotinakes
 
@@ -46,16 +45,22 @@ https://happiness-report.s3.amazonaws.com/2021/Appendix1WHR2021C2.pdf
 ## Methods
 
 Tools:
-Used for data exploration, preprocessing, and visualization
 * Numpy
 * Pandas
 * Matplotlib
 * Seaborn
 
-Methods using SciKit:
-* Models: KNN, Linear Regression, and Decision Tree
+Methods/Models:
+* KNN
+* Linear Regression
+* Decision Tree
 
-File created using Jupyter Notebook via Anaconda
+*File created using Jupyter Notebook via Anaconda*
+
+Using the tool set above, we first explored the dataset, did some data preprocessing/datamunging, and visualized the data relationship. 
+
+We then ran experiments using the three methods/machine learning models to see what provided more accurate test predictions for this dataset. Within each model, we ran some subset experiments to test some feature selection/engineering to see if we could fine tune or improve each model.
+
 
 ## Results
 
