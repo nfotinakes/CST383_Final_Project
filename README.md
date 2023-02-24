@@ -57,7 +57,7 @@ Models:
 
 *File created using Jupyter Notebook via Anaconda*
 
-Using the tool set above, we first explored the dataset, did data preprocessing/datamunging, and visualized the data relationship between the target Ladder score and predictors. 
+Using the tool set above, we first read that dataset as a dataframe using Pandas and then further explored the dataset with Pandas and NumPy. With these we then did further data preprocessing/datamunging, and used Matplotlib and Seaborn to visualize the data relationship between the target Ladder score and predictors. 
 
 We then ran experiments using the three machine learning models to see what provided more accurate test predictions for this dataset. Within each model, we ran some subset experiments to test some feature selection/engineering to see if we could fine tune or improve each model.
 
