@@ -3,7 +3,7 @@ CST383: Intro to Data Science - Final Project
 
 #### Authors: Alonso Vega, Daniel Letterman, Gabe Williams, and Nicholas Fotinakes
 
-**Video Presentation:** https://youtu.be/DHNSQ5ur3eU
+**Video Presentation:** https://youtu.be/vWtD-Oy7nvE
 
 ## Introduction
 
