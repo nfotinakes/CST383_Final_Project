@@ -51,6 +51,7 @@ Tools:
 * Pandas
 * Matplotlib
 * Seaborn
+* Scikit-learn
 
 Models:
 * KNN
